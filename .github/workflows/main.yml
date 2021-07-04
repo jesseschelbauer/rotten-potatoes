@@ -39,7 +39,7 @@ jobs:
             schelbauer/rotten-potatoes:latest
             schelbauer/rotten-potatoes:${{ github.run_number }}
   CD:
-    runs-on: unbunto-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Kubernetes set context
